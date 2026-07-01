@@ -161,6 +161,19 @@
             line-height: 1;
             text-decoration: none;
             transition: all 0.25s ease;
+            color: var(--accent-hover) !important;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, var(--accent-deep) 0%, var(--accent-color) 50%, var(--accent-hover) 100%);
+            color: #14110A !important;
+            border-color: var(--accent-hover);
+            box-shadow: 0 6px 20px -4px rgba(201, 161, 75, 0.45);
+            text-decoration: none;
+        }
+
+        .btn:active {
+            transform: translateY(1px);
         }
 
         .btn-primary {
@@ -226,6 +239,7 @@
         </header>
 
 
+        <main></main>
         <section>
           <h1>Ghost Apocalypse</h1>
           <img src="GhostApocalypse.jpeg" alt="Ghost Apocalypse" width="600" height="500">
@@ -270,7 +284,14 @@
 
 
             <p class="paragraph">This movie is a carry on from The biggest Infection.</p>
+
+
+            <div class="nav-buttons">
+                <a href="index.html" class="btn">Return to Homepage 🏠</a>
+            </div>
         </section>
+        </main>
+
 
   </div>
 
