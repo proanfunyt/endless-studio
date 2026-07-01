@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proanfun | Continue</title>
+    
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color:#0A0A0C;
+            --card-bg:#16161A;
+            --card-bg-light:#1B1B20;
+            --text-color:#6e0eec;
+            --text-muted:#8C8C95;
+            --accent-color:#6e0eec;
+            --accent-hover:#5614acc0;
+            --accent-deep:#500199;
+            --accent-pale:#F1DFA8;
+            --border-color:#2B2620;
+            --border-radius:4px;
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            background-color: var(--bg-color);
+            background-image:
+                radial-gradient(circle at 15% 0%, rgba(201,161,75,0.06) 0%, transparent 45%),
+                radial-gradient(circle at 85% 100%, rgba(201,161,75,0.05) 0%, transparent 45%);
+            font-family: 'Montserrat', 'Segoe UI', sans-serif;
+            color: var(--text-color);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .prompt-card {
+            position: relative;
+            max-width: 520px;
+            width: 100%;
+            background: linear-gradient(160deg, var(--card-bg-light) 0%, var(--card-bg) 100%);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 48px 44px;
+            text-align: center;
+            box-shadow: 0 12px 30px -10px rgba(0,0,0,0.5);
+        }
+
+        .prompt-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--accent-color), transparent);
+            border-radius: var(--border-radius) 0 0 var(--border-radius);
+        }
+
+        .eyebrow {
+            display: inline-block;
+            color: var(--accent-color);
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .prompt-text {
+            font-family: 'Cormorant Garamond', serif;
+            background: linear-gradient(135deg, var(--accent-pale) 0%, var(--accent-color) 45%, var(--accent-hover) 60%, var(--accent-deep) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            line-height: 1.3;
+            margin-bottom: 34px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+        }
+
+        .btn {
+            flex: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: 1px solid var(--accent-color);
+            outline: none;
+            padding: 13px 28px;
+            border-radius: var(--border-radius);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            line-height: 1;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        .btn-primary {
+            background: transparent;
+            color: var(--accent-hover) !important;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, var(--accent-deep) 0%, var(--accent-color) 50%, var(--accent-hover) 100%);
+            color: #14110A !important;
+            border-color: var(--accent-hover);
+            box-shadow: 0 6px 20px -4px rgba(201, 161, 75, 0.45);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-muted) !important;
+            border-color: var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            color: var(--text-color) !important;
+            border-color: var(--text-muted);
+            background-color: rgba(255,255,255,0.03);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+    <div class="prompt-card">
+        <span class="eyebrow">LiamsLevelUp</span>
+        <h1 class="prompt-text">Do you want to continue to about me?</h1>
+        <div class="button-group">
+            <a href="inprogress.html" class="btn btn-primary">Yes</a>
+            <a href="index.html" class="btn btn-secondary">No</a>
+        </div>
+    </div>
+</body>
+</html>
